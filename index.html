@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>App-ka Kaydka Miisaaniyadda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Kaydka Miisaaniyadda</h1>
+
+    <div class="balance">
+      <h2>Hadhaagaaga</h2>
+      <p id="totalBalance">$0.00</p>
+    </div>
+
+    <div class="summary">
+      <div class="income">
+        <h3>Dakhli</h3>
+        <p id="totalIncome">$0.00</p>
+      </div>
+      <div class="expense">
+        <h3>Kharash</h3>
+        <p id="totalExpense">$0.00</p>
+      </div>
+    </div>
+
+    <h2>Kudar Macluumaad</h2>
+
+    <form id="transactionform">
+      <input type="text" id="description" placeholder="Sharaxaad (e.g. Hasaan Abdi)" required />
+      <input type="number" id="amount" placeholder="Lacagta" required />
+
+      <div class="radio-buttons">
+        <label><input type="radio" name="type" value="income" checked /> Dakhli</label>
+        <label><input type="radio" name="type" value="expense" /> Kharash</label>
+      </div>
+
+      <button type="submit">Ku dar Macluumaad</button>
+    </form>
+
+    <h2>Taariikhda</h2>
+    <ul id="Transactionlist"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
